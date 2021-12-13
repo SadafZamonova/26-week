@@ -1,6 +1,6 @@
 
 
-function Hero(props) {
+function Heroes(props) {
 
     const {person, universe, activity, superpowers, src} = props;
 
@@ -17,4 +17,4 @@ function Hero(props) {
     );
 }
 
-export default Hero;
+export default Heroes;
