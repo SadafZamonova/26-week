@@ -1,16 +1,16 @@
-
+import './hero.css';
 
 function Heroes(props) {
 
-    const {person, universe, activity, superpowers, src} = props;
+    const {item} = props; 
 
     return(
         <div className="card">
-         <div className="card_title">{ person }</div>
-         <div className="card_item"><span>Вселенная: </span>{ universe }</div>
-         <div className="card_item"><span>Род деятельности: </span>{ activity }</div>
-         <div className="card_item"><span>Суперсилы: </span>{ superpowers }</div>
-         <img className="picture" src={ src } alt="" />
+         <div className="card_title">{ item.person }</div>
+         <div className="card_item"><span>Вселенная: </span>{ item.universe }</div>
+         <div className="card_item"><span>Род деятельности: </span>{ item.activity }</div>
+         <div className="card_item"><span>Суперсилы: </span>{ item.superpowers }</div>
+         <img className="picture" src={ item.src } alt="" />
 
 
         </div>

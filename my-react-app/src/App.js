@@ -33,7 +33,8 @@ function App() {
 
       {
        heroes.map((hero)=>
-       <Hero person={hero.person} universe={hero.universe} activity={hero.activity} superpowers={hero.superpowers}></Hero>
+      <Hero item = {hero}/>
+       
        )
       }
     </div>
